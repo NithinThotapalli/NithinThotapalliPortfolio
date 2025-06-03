@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,6 +11,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const [sent, setSent] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -34,6 +34,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    setSent(true);
     // Handle form submission here
   };
 
@@ -102,9 +103,10 @@ const Contact = () => {
               <Button
                 type="submit"
                 className="w-full bg-white text-gray-900 hover:bg-gray-100 font-medium py-3 transition-all duration-300 interactive group"
+                disabled={sent}
               >
                 <span className="group-hover:scale-105 transition-transform duration-200">
-                  Send Message
+                  {sent ? "Sent" : "Send Message"}
                 </span>
               </Button>
             </form>
@@ -126,7 +128,7 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <a
-                  href="mailto:nithin.thotapalli@example.com"
+                  href="mailto:nithinthotapalli80@gmail.com"
                   className="flex items-center space-x-4 text-gray-300 hover:text-white transition-colors group interactive"
                 >
                   <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-all duration-300">
@@ -134,7 +136,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-medium">Email</div>
-                    <div className="text-sm text-gray-400">nithin.thotapalli@example.com</div>
+                    <div className="text-sm text-gray-400">nithinthotapalli80@gmail.com</div>
                   </div>
                 </a>
 
@@ -154,7 +156,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://github.com/nithin-thotapalli"
+                  href="https://github.com/NithinThotapalli"
                   className="flex items-center space-x-4 text-gray-300 hover:text-white transition-colors group interactive"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -175,7 +177,7 @@ const Contact = () => {
         {/* Footer */}
         <div className={`mt-20 pt-8 border-t border-white/10 text-center transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
           <p className="text-gray-400">
-            © 2024 Nithin Thotapalli. Crafted with passion and precision.
+            © 2025 Nithin Thotapalli. Crafted with passion and precision.
           </p>
         </div>
       </div>

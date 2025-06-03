@@ -21,8 +21,8 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
-            <span className="block gradient-text">Nithin</span>
-            <span className="block gradient-text">Thotapalli</span>
+            <span className="block gradient-text">Nithin Thotapalli</span>
+            
           </h1>
         </div>
 

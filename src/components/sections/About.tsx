@@ -51,11 +51,11 @@ const About = () => {
 
               <div className="grid grid-cols-2 gap-8 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">5+</div>
+                  <div className="text-3xl font-bold text-gray-900 mb-2">4+</div>
                   <div className="text-sm text-gray-600 uppercase tracking-wide">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-gray-900 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-gray-900 mb-2">20+</div>
                   <div className="text-sm text-gray-600 uppercase tracking-wide">Projects Completed</div>
                 </div>
               </div>
@@ -72,10 +72,10 @@ const About = () => {
             
             <div className="space-y-16">
               {[
-                { year: '2019', title: 'Started Programming', desc: 'Discovered the magic of code' },
-                { year: '2021', title: 'First Professional Role', desc: 'Joined as a junior developer' },
+                { year: '2021', title: 'Started Programming', desc: 'Discovered the magic of code' },
+                { year: '2022', title: 'First Professional Role', desc: 'Freelanced as a web dev' },
                 { year: '2023', title: 'Full-Stack Mastery', desc: 'Expanded expertise across the stack' },
-                { year: '2024', title: 'Creative Leadership', desc: 'Leading innovative projects' },
+                { year: '2024', title: 'Full-Stack Devloper', desc: 'Full-time Freelance Dev' },
               ].map((item, index) => (
                 <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                   <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>

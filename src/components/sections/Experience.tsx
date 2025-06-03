@@ -26,29 +26,32 @@ const Experience = () => {
     { name: 'JavaScript/TypeScript', level: 95 },
     { name: 'React/Next.js', level: 90 },
     { name: 'Node.js/Express', level: 85 },
-    { name: 'Python/Django', level: 80 },
+    { name: 'Python', level: 80 },
     { name: 'UI/UX Design', level: 85 },
-    { name: 'Cloud Architecture', level: 75 },
+    { name: 'HTML/CSS', level: 95 },
+    { name: 'Tailwind CSS', level: 90 },
+    { name: 'Git/GitHub', level: 90 },
+    
   ];
 
   const experiences = [
     {
-      role: 'Senior Full-Stack Developer',
-      company: 'Tech Innovation Labs',
-      period: '2023 - Present',
-      description: 'Leading development of scalable web applications and mentoring junior developers.',
+      role: 'Freelance Full-Stack Developer',
+      company: 'Self-Employed',
+      period: '2024 - Present',
+      description: 'Leading development of scalable web applications, focusing on performance and user experience. Collaborating with clients to deliver tailored solutions.',
+    },
+   {
+      role: 'Web Designer',
+      company: 'Vibex Events',
+      period: '2023 - 2024',
+      description: 'Made custom web designs for events, focusing on user experience and responsive design.',
     },
     {
-      role: 'Frontend Developer',
-      company: 'Digital Solutions Inc.',
-      period: '2021 - 2023',
-      description: 'Created responsive web applications and improved user experience across multiple platforms.',
-    },
-    {
-      role: 'Junior Developer',
-      company: 'StartUp Ventures',
-      period: '2019 - 2021',
-      description: 'Developed feature-rich applications and collaborated with cross-functional teams.',
+      role: 'Freelance Web Designer',
+      company: 'Self-Employed',
+      period: '2022 - 2023',
+      description: 'Desgined entry level basic Portfolios & Landing Pages.',
     },
   ];
 
@@ -117,10 +120,10 @@ const Experience = () => {
         {/* Achievement Stats */}
         <div className={`mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
           {[
-            { number: '50+', label: 'Projects Completed' },
-            { number: '15+', label: 'Technologies Mastered' },
-            { number: '5+', label: 'Years Experience' },
-            { number: '100%', label: 'Client Satisfaction' },
+            { number: '20+', label: 'Projects Completed' },
+            { number: '10+', label: 'Technologies Mastered' },
+            { number: '4+', label: 'Years Experience' },
+            { number: '99.5%', label: 'Client Satisfaction' },
           ].map((stat, index) => (
             <div key={index} className="text-center group interactive">
               <div className="text-4xl font-bold text-gray-900 mb-2 group-hover:scale-110 transition-transform duration-300">
