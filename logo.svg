@@ -1,0 +1,20 @@
+<!-- filepath: d:\NithinThotapalli\nithin-folio-motion-story\logo.svg -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" fill="#0A0A0A"/>
+  <!-- Left shape -->
+  <path d="M18 10
+           Q18 54 18 54
+           Q18 58 22 58
+           H30
+           V32
+           L18 22
+           Z" fill="white"/>
+  <!-- Right shape -->
+  <path d="M46 54
+           Q46 10 46 10
+           Q46 6 42 6
+           H34
+           V32
+           L46 42
+           Z" fill="white"/>
+</svg>
